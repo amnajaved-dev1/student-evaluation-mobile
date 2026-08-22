@@ -122,8 +122,10 @@ Mobile APP project/
 ---
 
 ## 🖼️ Screenshots
+## All the detail are mentioned here in the link
 
-added in the link 
+https://amnajaved-dev1.github.io/student-evaluation-web/ 
+
 
 
 ---
