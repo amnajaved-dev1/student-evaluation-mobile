@@ -1,0 +1,248 @@
+/* ========================= 
+   Global Reset & Base
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #FFFDF6; /* cream */
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: #2C5F2D; /* dark green */
+    margin-bottom: 10px;
+}
+
+/* =========================
+   Container Layout
+   ========================= */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* =========================
+   Sidebar
+   ========================= */
+.sidebar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #EAF4E4; /* light green cream */
+    padding: 25px 15px;
+    border-right: 2px solid #C6D8B8;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    color: #2C5F2D;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4A4A4A;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #2C5F2D;
+    font-weight: 500;
+    padding: 8px 14px;
+    display: block;
+    border-radius: 7px;
+    transition: 0.25s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #C6D8B8;
+    color: #1B3A2F;
+}
+
+/* =========================
+   Main Content
+   ========================= */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px 12px;
+    text-align: left;
+}
+
+table th {
+    background: #C6D8B8; /* soft green */
+    color: #1B3A2F;
+    font-weight: 600;
+}
+
+table td {
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #F1F9EF;
+}
+
+/* =========================
+   Forms & Inputs
+   ========================= */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #C6D8B8;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2C5F2D;
+    box-shadow: 0 0 4px rgba(44, 95, 45, .25);
+    outline: none;
+}
+
+/* =========================
+   Buttons
+   ========================= */
+button,
+.btn {
+    background: #2C5F2D;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    background: #1F3F20;
+    transform: translateY(-1px);
+}
+
+/* For destructive or danger actions */
+.btn-danger {
+    background: #D64541;
+}
+.btn-danger:hover {
+    background: #A93226;
+}
+
+/* =========================
+   Alerts / Messages
+   ========================= */
+.alert {
+    padding: 12px 18px;
+    border-radius: 5px;
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.alert-success {
+    background: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+}
+
+.alert-error {
+    background: #F8D7DA;
+    color: #721C24;
+    border: 1px solid #F5C6CB;
+}
+
+/* =========================
+   Chart Containers
+   ========================= */
+canvas {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+/* =========================
+   Responsive Tweaks
+   ========================= */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: none;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+/* =========================
+   Extras (Hover, Transitions)
+   ========================= */
+a {
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #2C5F2D;
+}
+/* LOGO IN SIDEBAR */
+.sidebar-logo {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.logo-img {
+    max-width: 120px;    /* adjust size */
+    height: auto;
+    margin-bottom: 8px;
+}
